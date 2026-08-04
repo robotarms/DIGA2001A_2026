@@ -40,12 +40,12 @@ moveInput.y;
 controller.Move(move * moveSpeed * Time.deltaTime);
 if (controller.isGrounded && velocity.y < 0)
 velocity.y = -2f;
-velocity.y += gravity * Time.deltaTime;
-controller.Move(velocity * Time.deltaTime);
+velocity.y += gravity * Time.deltaTime; //adds gravity to player's vertical velocity
+controller.Move(velocity * Time.deltaTime); //moves player vertically using velocity value
 }
-public void HandleLook()
+public void HandleLook() //handles player camera and body rotation
 {
-float mouseX = lookInput.x * lookSensitivity;
+float mouseX = lookInput.x * lookSensitivity; //calculate horizontal movement using look input and selected sensitivity
 float mouseY = lookInput.y * lookSensitivity;
 verticalRotation -= mouseY;
 verticalRotation = Mathf.Clamp(verticalRotation, -
