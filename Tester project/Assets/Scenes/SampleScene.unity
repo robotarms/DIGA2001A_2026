@@ -40490,6 +40490,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 54ead573-f7a4-4dfa-bbae-53c85d566f08
     m_ActionName: 'Player/Look[/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1908836979}
+        m_TargetAssemblyTypeName: FPController, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 96bdb759-58e9-41eb-b79c-5464abe92c3b
+    m_ActionName: 'Player/Jump[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -40509,9 +40525,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FPController
   moveSpeed: 5
   gravity: -9.81
+  jumpHeight: 1.5
   cameraTransform: {fileID: 330585546}
-  lookSensitivity: 1
+  lookSensitivity: 2
   verticalLookLimit: 90
+  bulletPrefab: {fileID: 0}
+  gunPoint: {fileID: 0}
+  bulletForce: 500
+  crouchHeight: 1
+  standHeight: 2
+  crouchSpeed: 2.5
 --- !u!1 &1925863348
 GameObject:
   m_ObjectHideFlags: 0
