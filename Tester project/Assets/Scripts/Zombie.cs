@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
-    private string name;
+    private string Name;
     private int arms;
     private int legs;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
