@@ -488,6 +488,7 @@ GameObject:
   - component: {fileID: 126390652}
   - component: {fileID: 126390651}
   - component: {fileID: 126390650}
+  - component: {fileID: 126390655}
   m_Layer: 0
   m_Name: ball
   m_TagString: Pickup
@@ -615,6 +616,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &126390655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126390649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5009979b818a74d8be6ae73517044f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUpObject
 --- !u!1 &261874843
 GameObject:
   m_ObjectHideFlags: 0
@@ -40628,13 +40641,13 @@ MonoBehaviour:
     m_ActionName: 'Player/Crouch[/Keyboard/ctrl]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1908836972}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1908836979}
+        m_TargetAssemblyTypeName: FPController, Assembly-CSharp
+        m_MethodName: OnPickUp
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -40671,6 +40684,10 @@ MonoBehaviour:
   crouchHeight: 1
   standHeight: 2
   crouchSpeed: 2.5
+  pickupRange: 3
+  holdPoint: {fileID: 271470816}
+  throwForce: 10
+  throwUpwardBoost: 1
 --- !u!1 &1925863348
 GameObject:
   m_ObjectHideFlags: 0

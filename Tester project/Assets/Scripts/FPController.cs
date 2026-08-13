@@ -29,8 +29,7 @@ public float throwUpwardBoost = 1f;
 private CharacterController controller;
 private Vector2 moveInput;
 private Vector2 lookInput;
-private Vector3 velocity; // Stores the player's current vertical
-movement, including gravity.
+private Vector3 velocity; // Stores the player's current vertical movement, including gravity.
 private float verticalRotation = 0f;
 // Awake runs once when the GameObject is first loaded.
 private void Awake()
@@ -110,9 +109,7 @@ public void OnJump(InputAction.CallbackContext context)
 {
 if (context.performed && controller.isGrounded) // Check that the Jump action was successfully performed and that the player is currently standing on the ground.
 {
-velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); //
-Calculates the upward speed needed for the player to reach the chosen jump
-height while accounting for gravity.
+velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); // Calculates the upward speed needed for the player to reach the chosen jump height while accounting for gravity.
 }
 }
 public void OnShoot(InputAction.CallbackContext context)
@@ -134,8 +131,7 @@ gunPoint.rotation
 Rigidbody rb = bullet.GetComponent<Rigidbody>();
 if (rb != null)
 {
-rb.AddForce(gunPoint.forward * bulletForce); // Adjust
-force value as needed
+rb.AddForce(gunPoint.forward * bulletForce); // Adjust force value as needed
 }
 }
 }
