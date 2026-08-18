@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 126390651}
   - component: {fileID: 126390650}
   - component: {fileID: 126390655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ball
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -40728,8 +40728,11 @@ MonoBehaviour:
   crouchHeight: 1
   standHeight: 2
   crouchSpeed: 2.5
-  pickupRange: 3
+  pickupRange: 10
   holdPoint: {fileID: 271470816}
+  pickupLayer:
+    serializedVersion: 2
+    m_Bits: 64
   throwForce: 10
   throwUpwardBoost: 1
 --- !u!1 &1925863348

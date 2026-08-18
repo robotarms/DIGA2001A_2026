@@ -23,6 +23,7 @@ private float originalMoveSpeed;
 public float pickupRange = 3f;
 public Transform holdPoint;
 private PickUpObject heldObject;
+public LayerMask pickupLayer;
 [Header("Throw Settings")]
 public float throwForce = 10f;
 public float throwUpwardBoost = 1f;
