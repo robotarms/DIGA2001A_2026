@@ -163,6 +163,7 @@ if (pickUp != null)
 {
 pickUp.PickUp(holdPoint);
 heldObject = pickUp;
+Debug.Log("Object is grabbed.");
 }
 }
 }
@@ -170,6 +171,7 @@ else
 {
 heldObject.Drop();
 heldObject = null;
+//Debug.Log("Object is dropped");
 }
 }
 public void OnThrow(InputAction.CallbackContext context)
