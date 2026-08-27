@@ -20,6 +20,8 @@ public class Animal : MonoBehaviour
         _numLegs = legs;
     }
 
+   
+
     // Update is called once per frame
     void Update()
     {

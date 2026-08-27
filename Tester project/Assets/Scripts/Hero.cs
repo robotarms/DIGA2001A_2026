@@ -1,13 +1,15 @@
 using UnityEngine;
 
-public class Goblin : Enemy
+namespace MyGame.Characters
 {
-    public void Giggle()
-    {
-        Debug.Log("Heeheehee!");
-    }
+public class Hero : MonoBehaviour
+{
+    public int health = 100;
 
-    
+    public void PrintHealth()
+    {
+        Debug.Log("Hero health is: " + health);
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,4 +21,5 @@ public class Goblin : Enemy
     {
         
     }
+}
 }

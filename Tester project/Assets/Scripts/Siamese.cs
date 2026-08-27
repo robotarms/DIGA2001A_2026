@@ -6,7 +6,7 @@ public class Siamese : Cat
 {
     public void ClimbTree()
     {
-        Debug.Log("The Siamese cat is climbing a tree");
+        Debug.Log(name + "The Siamese cat is climbing a tree");
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
